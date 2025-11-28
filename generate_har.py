@@ -14,7 +14,7 @@ JDK_DIR = os.path.join(BASE_DIR, "jdk1.8.0_471")
 
 HAR_FILENAME = os.path.join(BASE_DIR, "exactspace_network.har")
 SUMMARY_JSON = os.path.join(BASE_DIR, "network_summary.json")
-TARGET_URL = "https://exactspace.co/"
+TARGET_URL = "https://example.com"   # Replace here real URL
 
 
 # Validate and set up Java environment (process-only)
