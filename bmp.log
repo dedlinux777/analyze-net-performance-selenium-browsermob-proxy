@@ -1,0 +1,34 @@
+[INFO  2025-11-29T00:31:29,711 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2025-11-29T00:31:29,773 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2025-11-29T00:31:30,294 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2025-11-29T00:31:30,455 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8080 
+[INFO  2025-11-29T00:31:32,052 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp55755528-18) Starting proxy at address: 0.0.0.0/0.0.0.0:8081 
+[INFO  2025-11-29T00:31:32,139 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp55755528-18) Proxy listening with TCP transport 
+[INFO  2025-11-29T00:31:33,718 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp55755528-18) Proxy started at address: /0:0:0:0:0:0:0:0:8081 
+[WARN  2025-11-29T00:31:36,157 net.lightbody.bmp.mitm.util.SslUtil] (LittleProxy-0-ClientToProxyWorker-2) Disabling upstream server certificate verification. This will allow attackers to intercept communications with upstream servers. 
+[INFO  2025-11-29T00:31:37,299 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (NEGOTIATING_CONNECT) [id: 0x9c319762, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:64083]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2025-11-29T00:31:37,299 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (NEGOTIATING_CONNECT) [id: 0x25bf9dec, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:53372]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2025-11-29T00:31:37,309 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-1) (HANDSHAKING) [id: 0xf163490f, L:0.0.0.0/0.0.0.0:58828 ! R:www.google.com/142.250.182.68:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2025-11-29T00:31:37,309 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-2) (HANDSHAKING) [id: 0x60ea52d2, L:0.0.0.0/0.0.0.0:58827 ! R:accounts.google.com/74.125.68.84:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2025-11-29T00:31:37,993 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (NEGOTIATING_CONNECT) [id: 0xf91545be, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:58826]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2025-11-29T00:31:37,993 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (NEGOTIATING_CONNECT) [id: 0x09601531, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:52319]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2025-11-29T00:31:37,997 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-3) (HANDSHAKING) [id: 0x9b23d2bb, L:0.0.0.0/0.0.0.0:64360 ! R:exactspace.co/172.208.44.4:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2025-11-29T00:31:37,996 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-4) (HANDSHAKING) [id: 0xef0ffb2e, L:0.0.0.0/0.0.0.0:64361 ! R:exactspace.co/172.208.44.4:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[WARN  2025-11-29T00:31:39,589 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-0-ProxyToServerWorker-5) Cannot decode unsupported content encoding type br 
+[WARN  2025-11-29T00:31:39,589 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-0-ProxyToServerWorker-5) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2025-11-29T00:31:55,376 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-0-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2025-11-29T00:31:55,377 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-0-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2025-11-29T00:31:55,534 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-0-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2025-11-29T00:31:55,534 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-0-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2025-11-29T00:32:00,206 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-0-ClientToProxyWorker-3) No content type specified in request to /recaptcha/api2/clr?k=6LerP6AqAAAAANUVpcGVlDVJE9zrK2FVDrjSjF4l. Content will be treated as application/octet-stream 
+[WARN  2025-11-29T00:32:08,465 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (AWAITING_INITIAL) [id: 0xfd2aabb4, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54750]: No host and port found in /bad-request 
+[INFO  2025-11-29T00:32:12,107 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x44101e84, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:63631]: An IOException occurred on ClientToProxyConnection: An existing connection was forcibly closed by the remote host 
+[INFO  2025-11-29T00:32:12,108 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0xebaaca17, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:51120]: An IOException occurred on ClientToProxyConnection: An existing connection was forcibly closed by the remote host 

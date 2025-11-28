@@ -1,0 +1,30 @@
+{
+  "total_requests": 92,
+  "status_summary": [
+    {
+      "category": "1XX",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "category": "2XX",
+      "count": 88,
+      "percentage": 95.65
+    },
+    {
+      "category": "3XX",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "category": "4XX",
+      "count": 1,
+      "percentage": 1.09
+    },
+    {
+      "category": "5XX",
+      "count": 0,
+      "percentage": 0.0
+    }
+  ]
+}
